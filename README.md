@@ -38,3 +38,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # http://igorbezmestin.ru/ - gasest info despre tehnologii
 
 # https://elena-13.github.io/ - gasesc info cu proiecte (design)
+
+# http://riccardozanutta.com/
+
+# 1. De facut portfolio
+
+# 2. De adaugat text potrivit
