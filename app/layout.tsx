@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Providers from "./providers";
 import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Pirnau Artemie - Front End Developer",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`montserrat.className`}>
+      <body className={poppins.className}>
         <Providers>
           <div className="container">
             <Header />

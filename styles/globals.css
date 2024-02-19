@@ -17,12 +17,13 @@
 }
 
 .header {
-  min-height: 100px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
+  /* Daca ceva de pus : min-h-screen la header */
 }
-.header__inner {
+.header__top {
+  min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
