@@ -17,13 +17,14 @@
 }
 
 .header {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
-  /* Daca ceva de pus : min-h-screen la header */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }
+
 .header__top {
   min-height: 100px;
+  margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;

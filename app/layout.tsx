@@ -23,9 +23,7 @@ export default function RootLayout({
         <Providers>
           <div className="container">
             <Header />
-            <main className="flex mt-20 items-start min-h-screen">
-              {children}
-            </main>
+            <main className="">{children}</main>
             <Footer />
           </div>
         </Providers>
