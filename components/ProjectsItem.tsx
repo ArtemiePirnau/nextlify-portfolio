@@ -6,7 +6,7 @@ export default function ProjectsItem({ id, img, link }: ItemProps) {
     <Link href={link}>
       <div
         key={id}
-        className="portfolio__item w-[460px] h-80 bg-center bg-no-repeat bg-cover my-2"
+        className="portfolio__item w-[450px] h-80 bg-center bg-no-repeat bg-cover my-2 mx-2"
         style={{ backgroundImage: `url(${img})` }}
       ></div>
     </Link>

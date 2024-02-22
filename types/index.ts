@@ -3,12 +3,14 @@ export interface ItemProps {
   img: string;
   link: string;
 }
-export interface ReactProjectsProps {
-  projectsReact: ItemProps[];
-}
-export interface HTMLProjectsProps {
+export interface ProjectsProps {
   projectsHTML: ItemProps[];
-}
-export interface JSProjectsProps {
+  projectsReact: ItemProps[];
   projectsJS: ItemProps[];
 }
+// export interface HTMLProjectsProps {
+//   projectsHTML: ItemProps[];
+// }
+// export interface JSProjectsProps {
+//   projectsJS: ItemProps[];
+// }

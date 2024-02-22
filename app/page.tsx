@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <section className="wrapper w-full">
-      <div className="about">
+      <div className="about mb-60">
         <h4 className="about__title text-4xl uppercase font-bold text-center mb-5">
           About
         </h4>
@@ -38,7 +38,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Projects projectsHTML={projectsHTML} />
+      <Projects
+        projectsHTML={projectsHTML}
+        projectsJS={projectsJS}
+        projectsReact={projectsReact}
+      />
     </section>
   );
 }

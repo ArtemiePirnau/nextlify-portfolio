@@ -32,3 +32,12 @@
 .menu__item + .menu__item {
   margin-top: 40px;
 }
+.portfolio__tab + .portfolio__tab {
+  margin-left: 60px;
+}
+[data-filter] {
+  transition: all 0.3s ease-in-out;
+}
+[data-filter]:hover {
+  color: #36a8b3;
+}
