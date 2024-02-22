@@ -11,7 +11,7 @@ export default function Projects({ projectsHTML }: HTMLProjectsProps) {
         <p className="portfolio__text section-text">Some of my works</p>
         <div className="portfolio__tabs">
           <button
-            className="portfolio__tab text portfolio__tab-websites"
+            className="portfolio__tab text portfolio__tab-websites "
             data-filter=".websites"
           >
             HTML/CSS
@@ -27,9 +27,11 @@ export default function Projects({ projectsHTML }: HTMLProjectsProps) {
           </button>
         </div>
         <div className="portfolio__items-wrapper">
-          <div className="portfolio__items mix websites">
+          <div className="portfolio__items mix websites flex flex-wrap justify-between">
             {projectsHTML.map((item) => {
-              return <ProjectsItem key={item.id} item={item} />;
+              return (
+                <ProjectsItem id={item.id} img={item.img} link={item.link} />
+              );
             })}
           </div>
         </div>

@@ -51,41 +51,36 @@ const projectsHTML = [
   },
   {
     id: 11,
-    img: "https://user-images.githubusercontent.com/92051961/189172368-07c512a8-34db-4120-89c3-349c00887efe.png",
-    link: "https://artemiepirnau.github.io/cybersecurity-landing-page/",
-  },
-  {
-    id: 12,
     img: "https://user-images.githubusercontent.com/92051961/189172519-0ef663d3-1bbf-430d-a276-4ce5a658c92f.png",
     link: "https://artemiepirnau.github.io/mentor-landing-page/dist/index.html",
   },
   {
-    id: 13,
+    id: 12,
     img: "https://user-images.githubusercontent.com/92051961/189172655-69ff96f7-8761-43f1-bf6d-8dcf34915012.png",
     link: "https://artemiepirnau.github.io/social-media-ui/dist/",
   },
   {
-    id: 14,
+    id: 13,
     img: "https://user-images.githubusercontent.com/92051961/189172803-515e5129-7522-4c7d-b270-4314c1533242.png",
     link: "https://artemiepirnau.github.io/blog-ui/dist/",
   },
   {
-    id: 15,
+    id: 14,
     img: "https://user-images.githubusercontent.com/92051961/189172919-bf5c2b4d-d094-4eed-990c-3b50e32f1774.png",
     link: "https://artemiepirnau.github.io/3d-courses-ui/dist/",
   },
   {
-    id: 16,
+    id: 15,
     img: "https://user-images.githubusercontent.com/92051961/189174230-20b1345b-2b8f-4973-bb3d-9919500fcdf8.png",
     link: "https://artemiepirnau.github.io/mars-travel-landing/dist/",
   },
   {
-    id: 17,
+    id: 16,
     img: "https://user-images.githubusercontent.com/92051961/190860790-dd698c53-73d7-42ee-a463-fe643e03577d.png",
     link: "https://artemiepirnau.github.io/autoprokat-landing/dist/",
   },
   {
-    id: 18,
+    id: 17,
     img: "https://user-images.githubusercontent.com/92051961/190860797-a72c86b4-48a4-46d4-8883-b8e22f7c8879.png",
     link: "https://artemiepirnau.github.io/autoprokat-landing/dist/product.html",
   },
