@@ -4,7 +4,8 @@ import Providers from "./providers";
 import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import { Suspense } from "react";
+import Loading from "./loading";
 const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
@@ -23,7 +24,9 @@ export default function RootLayout({
         <Providers>
           <div className="container">
             <Header />
-            <main className="">{children}</main>
+            <Suspense fallback={<Loading />}>
+              <main className="">{children}</main>
+            </Suspense>
             <Footer />
           </div>
         </Providers>

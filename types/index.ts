@@ -8,9 +8,9 @@ export interface ProjectsProps {
   projectsReact: ItemProps[];
   projectsJS: ItemProps[];
 }
-// export interface HTMLProjectsProps {
-//   projectsHTML: ItemProps[];
-// }
-// export interface JSProjectsProps {
-//   projectsJS: ItemProps[];
-// }
+export interface SkillsProps {
+  text: string;
+  num: string;
+  width: string;
+  color: string;
+}

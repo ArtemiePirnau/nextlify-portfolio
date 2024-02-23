@@ -32,12 +32,91 @@
 .menu__item + .menu__item {
   margin-top: 40px;
 }
-.portfolio__tab + .portfolio__tab {
-  margin-left: 60px;
+.portfolio__tabs {
+  display: flex;
+  justify-content: space-around;
 }
 [data-filter] {
   transition: all 0.3s ease-in-out;
 }
 [data-filter]:hover {
   color: #36a8b3;
+}
+
+/* Skills */
+
+.skills {
+  color: #fff;
+  margin-bottom: 150px;
+}
+.skills__item {
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+.skills__item-content {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-width: 5px;
+}
+.skills__item-line {
+  margin-top: -5px;
+  height: 5px;
+}
+.skills__item-num,
+.skills__item-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+/* Footer */
+
+.footer {
+  color: #fff;
+  padding-bottom: 50px;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__list {
+  display: flex;
+  margin-bottom: 50px;
+}
+.footer__item {
+  margin: 0 50px;
+}
+.footer__link {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+.footer__link::before {
+  content: "";
+  position: absolute;
+  left: auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #2da8d8ff;
+  height: 3px;
+  width: 0;
+  bottom: -10px;
+  right: 0;
+}
+.footer__link:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+.footer__logo {
+  margin-bottom: 30px;
+}
+.footer {
+  text-transform: uppercase;
+  font-weight: 600;
 }

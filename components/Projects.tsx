@@ -20,7 +20,7 @@ export default function Projects({
     });
   }, []);
   return (
-    <div className="projects">
+    <div className="projects mb-60">
       <h3 className="portfolio__title section-title text-4xl uppercase font-bold text-center mb-5">
         Portfolio
       </h3>
@@ -49,21 +49,21 @@ export default function Projects({
           <div className="portfolio__items mix websites flex flex-wrap">
             {projectsHTML.map((item) => {
               return (
-                <ProjectsItem id={item.id} img={item.img} link={item.link} />
+                <ProjectsItem key={item.id} img={item.img} link={item.link} />
               );
             })}
           </div>
           <div className="portfolio__items mix apps flex flex-wrap">
             {projectsJS.map((item) => {
               return (
-                <ProjectsItem id={item.id} img={item.img} link={item.link} />
+                <ProjectsItem key={item.id} img={item.img} link={item.link} />
               );
             })}
           </div>
           <div className="portfolio__items mix react flex flex-wrap">
             {projectsReact.map((item) => {
               return (
-                <ProjectsItem id={item.id} img={item.img} link={item.link} />
+                <ProjectsItem key={item.id} img={item.img} link={item.link} />
               );
             })}
           </div>

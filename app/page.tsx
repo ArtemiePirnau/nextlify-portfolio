@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import { projectsHTML, projectsJS, projectsReact } from "@/data";
 export default function Home() {
   console.log(projectsHTML);
@@ -43,6 +44,7 @@ export default function Home() {
         projectsJS={projectsJS}
         projectsReact={projectsReact}
       />
+      <Skills />
     </section>
   );
 }
