@@ -43,6 +43,16 @@
   color: #36a8b3;
 }
 
+/* Portfolio  */
+
+.portfolio__items.open {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio__items.closed {
+  display: none;
+}
+
 /* Skills */
 
 .skills {

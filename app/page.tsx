@@ -1,10 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import { projectsHTML, projectsJS, projectsReact } from "@/data";
 export default function Home() {
-  console.log(projectsHTML);
-
   return (
     <section className="wrapper w-full">
       <div className="about mb-60">
@@ -39,11 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Projects
-        projectsHTML={projectsHTML}
-        projectsJS={projectsJS}
-        projectsReact={projectsReact}
-      />
+      <Projects />
       <Skills />
     </section>
   );
