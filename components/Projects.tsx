@@ -1,60 +1,47 @@
 "use client";
-
-import FilterButtons from "./FilterButtons";
-import { data } from "@/data";
-import { useState } from "react";
-import { projectsHTML, projectsJS, projectsReact } from "@/data";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { latestProjects } from "@/data";
 export default function Projects() {
   return (
-    <div className="projects mb-60">
-      <h3 className="portfolio__title section-title text-4xl uppercase font-bold text-center mb-5">
-        Portfolio
-      </h3>
+    <div className="projects flex items-center justify-between mb-60">
       <div className="portfolio__inner">
-        <p className="portfolio__text section-text text-center uppercase text-lg mb-10">
-          Some of my works
+        <h3 className="portfolio__title section-title text-4xl uppercase font-bold text-center mb-5">
+          Latest projects
+        </h3>
+        <p className="portfolio__text mb-10 section-text text-center uppercase text-lg mb-10">
+          Lorem ipsum dolor sit amet consectetur.
         </p>
-        <FilterButtons />
-        <div className="portfolio__tabs text-center uppercase text-lg mb-10">
-          <button
-            className="portfolio__tab text portfolio__tab-websites "
-            data-filter=".websites"
-          >
-            HTML/CSS
-            <span></span>
-          </button>
-          <button className="portfolio__tab text" data-filter=".apps">
-            JavaScript
-            <span></span>
-          </button>
-          <button className="portfolio__tab text" data-filter=".react">
-            React
-            <span></span>
-          </button>
-        </div>
-        <div className="portfolio__items mix websites flex flex-wrap">
-          {projectsHTML.map((item) => {
-            return (
-              <ProjectsItem key={item.id} img={item.img} link={item.link} />
-            );
-          })}
-        </div>
-        <div className="portfolio__items mix apps flex flex-wrap">
-          {projectsJS.map((item) => {
-            return (
-              <ProjectsItem key={item.id} img={item.img} link={item.link} />
-            );
-          })}
-        </div>
-        <div className="portfolio__items mix react flex flex-wrap">
-          {projectsReact.map((item) => {
-            return (
-              <ProjectsItem key={item.id} img={item.img} link={item.link} />
-            );
-          })}
-        </div>
+        <Link href="/projects">
+          <Button className="block text-center">All projects</Button>
+        </Link>
+      </div>
+      <div className="portfolio__box flex flex-col justify-between">
+        {latestProjects.map((project) => {
+          return (
+            <Link
+              className="portfolio__box-item mb-10"
+              href={project.link}
+              key={project.id}
+            >
+              <div className="portfolio__box-item w-[400px]">
+                <Image
+                  className="object-cover portfolio__box-img rounded-md mb-6"
+                  src={project.img}
+                  alt="project image"
+                  width={400}
+                  height={500}
+                />
+                <h4 className="text-2xl font-semibold mb-4">{project.title}</h4>
+                <p>{project.descr}</p>
+              </div>
+            </Link>
+          );
+        })}
+        {/* <div className="portfolio__box-item"></div>
+          <div className="portfolio__box-item"></div> */}
       </div>
     </div>
   );
 }
-// TODO: De gasit o alternativa la mixitup sau de facut singur

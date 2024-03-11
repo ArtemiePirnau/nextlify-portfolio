@@ -8,7 +8,7 @@
 }
 .light {
   background-color: #fff;
-  color: #000;
+  color: #000 !important;
 }
 .container {
   max-width: 1440px;
@@ -45,18 +45,14 @@
 
 /* Portfolio  */
 
-.portfolio__items.open {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio__box-img {
+  position: relative !important;
+  width: 400px;
+  height: 500px;
 }
-.portfolio__items.closed {
-  display: none;
-}
-
 /* Skills */
 
 .skills {
-  color: #fff;
   margin-bottom: 150px;
 }
 .skills__item {
@@ -82,10 +78,10 @@
   font-weight: 600;
   font-size: 20px;
 }
+
 /* Footer */
 
 .footer {
-  color: #fff;
   padding-bottom: 50px;
 }
 .footer__inner {

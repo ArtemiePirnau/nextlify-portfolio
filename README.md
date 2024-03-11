@@ -41,6 +41,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # http://riccardozanutta.com/
 
+# ![alt text](image.png)
+
 # 1. De facut portfolio
 
 # 2. De adaugat text potrivit

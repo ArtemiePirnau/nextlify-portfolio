@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import Providers from "./providers";
 import "../styles/globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
 import Loading from "./loading";
-const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+const poppins = Inter({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Pirnau Artemie - Front End Developer",
@@ -19,12 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} cursor-default`}>
         <Providers>
           <div className="container">
-            <Header />
             <main className="">{children}</main>
-            <Footer />
           </div>
         </Providers>
       </body>
