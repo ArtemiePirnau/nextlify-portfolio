@@ -30,3 +30,4 @@ export default function Contacts() {
     </div>
   );
 }
+//TODO: De razbirit cu email github si de plasat pe vercel
