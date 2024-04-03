@@ -11,7 +11,7 @@ export default function Contacts() {
             Hello 👋
           </p>
           <h3 className="contacts__title text-7xl inline-block font-extrabold mb-10">
-            Let's work <br /> together
+            Lets work <br /> together
           </h3>
           <p className="contacts__label font-extralight">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At,
