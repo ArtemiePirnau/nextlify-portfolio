@@ -4,8 +4,9 @@ import Image from "next/image";
 export default function HeaderTop() {
   return (
     <div className="header__top">
-      <Link href="/">
+      <Link className="logo" href="/">
         <Image
+          className="logo__img sm:w-100%"
           priority
           src="https://github.com/ArtemiePirnau/nextjs-portfolio/blob/main/public/logo.png?raw=true"
           alt="logo"
@@ -13,7 +14,7 @@ export default function HeaderTop() {
           height={70}
         />
       </Link>
-      <Link className="ml-auto mr-24" href="/contacts">
+      <Link className="ml-auto mr-24 header__top-contacts" href="/contacts">
         Contacts
       </Link>
       <ThemeSwitch />

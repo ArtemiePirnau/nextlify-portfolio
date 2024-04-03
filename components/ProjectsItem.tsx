@@ -7,11 +7,10 @@ export default function ProjectsItem({ id, img, link, title }: ItemProps) {
   return (
     <Link className="box " href={link} key={id}>
       <div
-        className="rounded-md portfolio__item w-[450px] h-80 bg-center bg-no-repeat bg-cover my-4 mx-2"
+        className="projects__img rounded-md portfolio__item w-[450px] h-80 bg-center bg-no-repeat bg-cover my-4 mx-2 bg-cover"
         style={{ backgroundImage: `url(${img})` }}
       ></div>
-      <p className="text-2xl">{title}</p>
+      <p className="projects__title text-2xl">{title}</p>
     </Link>
   );
 }
-// TODO: De adaugat style pentr elementele primite si sa fie pe pagina

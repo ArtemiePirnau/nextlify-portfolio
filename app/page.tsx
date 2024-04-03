@@ -4,6 +4,7 @@ import Skills from "@/components/Skills";
 import About from "@/components/About";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
+import Help from "@/components/Help";
 export default function Home() {
   return (
     <section className="wrapper w-full">
@@ -12,6 +13,7 @@ export default function Home() {
         <About />
         <Projects />
         <Skills />
+        <Help />
         <Footer />
       </div>
     </section>

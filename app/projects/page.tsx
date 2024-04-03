@@ -13,10 +13,10 @@ export default function ProjectsList() {
   return (
     <Fragment>
       <HeaderTop />
-      <h2 className="text-center text-4xl uppercase font-semibold mb-10">
+      <h2 className="portfolio__title text-center text-4xl uppercase font-semibold mb-10">
         Portfolio
       </h2>
-      <div className="design grid grid-cols-3 gap-x-12 gap-y-2">
+      <div className="projects design grid grid-cols-3 gap-x-12 gap-y-2">
         {projectsHTML.map(({ id, img, link, title }) => (
           <ProjectsItem
             key={`html-${id}`}
@@ -27,7 +27,7 @@ export default function ProjectsList() {
           />
         ))}
       </div>
-      <div className="js grid grid-cols-3 gap-x-12 gap-y-2">
+      <div className="projects js grid grid-cols-3 gap-x-12 gap-y-2">
         {projectsJS.map(({ id, img, link, title }) => (
           <ProjectsItem
             key={`js-${id}`}
@@ -38,7 +38,7 @@ export default function ProjectsList() {
           />
         ))}
       </div>
-      <div className="react grid grid-cols-3 ggap-x-12 gap-y-2 mb-28">
+      <div className="projects react grid grid-cols-3 ggap-x-12 gap-y-2 mb-28">
         {projectsReact.map(({ id, img, link, title }) => (
           <ProjectsItem
             key={`react-${id}`}

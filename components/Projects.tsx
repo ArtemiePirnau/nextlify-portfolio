@@ -31,7 +31,7 @@ export default function Projects() {
                   src={project.img}
                   alt="project image"
                   width={400}
-                  height={500}
+                  height={400}
                 />
                 <h4 className="text-2xl font-semibold mb-4">{project.title}</h4>
                 <p>{project.descr}</p>
@@ -39,8 +39,6 @@ export default function Projects() {
             </Link>
           );
         })}
-        {/* <div className="portfolio__box-item"></div>
-          <div className="portfolio__box-item"></div> */}
       </div>
     </div>
   );

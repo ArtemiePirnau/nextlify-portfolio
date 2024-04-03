@@ -243,7 +243,7 @@ const latestProjects = [
   },
   {
     id: 40,
-    img: "https://user-images.githubusercontent.com/92051961/201527495-17a4cf3e-af22-4b7e-9c57-f90e737a3cbf.png",
+    img: "https://user-images.githubusercontent.com/92051961/201527485-e14c9a43-69ee-4fa4-b17b-2eb4cd3dac2e.png",
     link: "https://github.com/ArtemiePirnau/react-redux-search-songs",
     title: "Seach Artists",
     descr: "Search Artists using React, for API i used Spotify API",

@@ -1,12 +1,41 @@
+"use client";
 import { Button } from "@/components/ui/button";
-
+import { motion } from "framer-motion";
 export default function HeaderBottom() {
+  const title = "Pîrnău Artemie".split("  ");
+  const text = "Interactive Front End Developer".split("  ");
   return (
     <div className="info__box flex justify-between">
       <div className="info__about">
-        <h1 className="info__name text-7xl mb-10">Pîrnău Artemie</h1>
+        <h1 className="info__name text-7xl mb-10">
+          {title.map((el, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.75,
+                delay: i / 10,
+              }}
+            >
+              {el}
+            </motion.span>
+          ))}
+        </h1>
         <p className="info__descr text-2xl mb-10">
-          Interactive Front End Developer
+          {text.map((el, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 2.0,
+                delay: i / 10,
+              }}
+            >
+              {el}
+            </motion.span>
+          ))}
         </p>
         <Button>Download CV</Button>
       </div>
