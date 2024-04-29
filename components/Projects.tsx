@@ -26,15 +26,15 @@ export default function Projects() {
               key={project.id}
             >
               <div className="portfolio__box-item w-[400px]">
+                <h4 className="text-2xl font-semibold mb-4">{project.title}</h4>
+                <p className="mb-6">{project.descr}</p>
                 <Image
-                  className="object-cover portfolio__box-img rounded-md mb-6"
+                  className="object-cover portfolio__box-img rounded-md "
                   src={project.img}
                   alt="project image"
                   width={400}
                   height={400}
                 />
-                <h4 className="text-2xl font-semibold mb-4">{project.title}</h4>
-                <p>{project.descr}</p>
               </div>
             </Link>
           );

@@ -6,7 +6,7 @@ export default function HeaderTop() {
     <div className="header__top">
       <Link className="logo" href="/">
         <Image
-          className="logo__img sm:w-100%"
+          className="logo__img"
           priority
           src="https://github.com/ArtemiePirnau/nextlify-portfolio/blob/master/public/logo.png?raw=true"
           alt="logo"
