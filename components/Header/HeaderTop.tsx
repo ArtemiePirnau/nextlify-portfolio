@@ -8,7 +8,7 @@ export default function HeaderTop() {
         <Image
           className="logo__img sm:w-100%"
           priority
-          src="https://github.com/ArtemiePirnau/nextlify-portfolio/blob/master/public/logo.png"
+          src="https://github.com/ArtemiePirnau/nextlify-portfolio/blob/master/public/logo.png?raw=true"
           alt="logo"
           width={70}
           height={70}

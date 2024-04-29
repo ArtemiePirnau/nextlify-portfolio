@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer__inner">
           <Link href="/" className="mb-10">
             <Image
-              src="https://github.com/ArtemiePirnau/nextjs-portfolio/blob/main/public/logo.png?raw=true"
+              src="https://github.com/ArtemiePirnau/nextlify-portfolio/blob/master/public/logo.png?raw=true"
               alt="logo"
               width={70}
               height={70}

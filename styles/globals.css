@@ -277,9 +277,6 @@
     width: 100%;
     margin-bottom: 50px;
   }
-  .info__menu {
-    margin: 0 auto;
-  }
   .menu__list {
     display: flex;
   }
